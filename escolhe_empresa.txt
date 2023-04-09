@@ -7,7 +7,4 @@ A empresa X, ao longo dos anos, construiu cases de sucessos na área de Marketin
 Por outro lado, a empresa Y é iniciante no mercado. É composta por jovens empresários, com ideias frescas e metodologias menos burocráticas. Destaca-se a flexibilidade para negociação dos processos e custo. Pela realidade dessa empresa, o custo, naturalmente, é menor, porém a incerteza sobre a capacidade técnica dos profissionais fica no ar.
 
 
-Com qual empresa deseja negociar?
 
-(1) X
-(2) Y

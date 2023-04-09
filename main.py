@@ -4,9 +4,9 @@ import sys
 from colorama import init, Fore, Style
 import datetime 
 import re
+
+
 delay = 0.03
-
-
 
 init()
 def Animacao(texto, cor=Fore.WHITE):
@@ -15,9 +15,6 @@ def Animacao(texto, cor=Fore.WHITE):
         time.sleep(delay)
     print(Fore.RESET)
 
-
-def remove_ansi(texto):
-    return re.sub(r'\033\[[0-9;]+m', '', texto)
 
 def boas_vindas():
     # Obtém a data e hora atuais
@@ -100,12 +97,12 @@ def executar_cenario(cenario, opcoes):
     if cenario == 1:
         opcoesX = {
 
-            1: 'Abraçar a inovação, mudando completamente o setor de Marketing.',
-            2: 'Ser conservador, aperfeiçoando apenas o que já se faz, uma vez que custos adicionais podem surgir.'
+            1: 'Abraçar a inovação, mudando completamente o setor de Marketing e comunicação.',
+            2: 'Fortalecer os processos já existentes, levando em conta os custos.'
         }
 
         opcoesY = {
-            1: 'intesificação das ações nas redes sociais',
+            1: 'Intensificação das ações nas redes sociais',
             2: 'Pesquisa de satisfação no campus'
         }
 
@@ -113,14 +110,15 @@ def executar_cenario(cenario, opcoes):
 
         with open('escolhe_empresa.txt', 'r', encoding='utf-8') as escolha_empresa:
             Animacao(escolha_empresa.read())
-
-        emp = input()
+            emp = input(f'{usuario}, com qual empresa deseja negociar?\n\n(1) X\n\n(2) Y\n')
 
         emp = obter_opcoes(emp)
 
         if int(emp) == 1:
             with open('decisao_usuariox.txt', 'r', encoding='utf-8') as dec:
                 Animacao(dec.read())
+                print(f'{usuario}, pronto para decidir? ^^\n\n')
+
 
             for chave, valor in opcoesX.items():
                 print(Fore.YELLOW + Style.BRIGHT +
@@ -137,7 +135,7 @@ def executar_cenario(cenario, opcoes):
                 PontinhosSuspense()
 
                 with open('fim_decisao1x.txt', 'r', encoding='utf-8') as fim_decisaoX:
-
+                    print(f'\n\n{usuario},')
                     Animacao(fim_decisaoX.read(), Fore.RED)
                     print('\U0001F613', '\U0001F613')
 
@@ -146,6 +144,7 @@ def executar_cenario(cenario, opcoes):
                     Animacao(dec2.read())
 
                 with open('fim_decisao2x.txt', 'r', encoding='utf-8') as fim_decisao2x:
+                    print(f'{usuario},')
                     Animacao(fim_decisao2x, cor=Fore.GREEN)
 
         elif int(emp) == 2:
@@ -158,16 +157,21 @@ def executar_cenario(cenario, opcoes):
                       f'{k} - {v}\n\n' + Style.RESET_ALL)
 
             decidir = input(
-                'Decida a opção mais adequada, considerando tanto o contexto da instituição como o da empresa contratada.')
+                f'{usuario}, decida a opção mais adequada, considerando tanto o contexto da instituição como o da empresa contratada.')
 
             decidido = obter_opcoes(decidir)
 
             if int(decidir) == 1:
-                pass
+                with open('decisao1y.txt', 'r', encoding='utf-8') as decy1:
+                    Animacao(decy1.read())
 
             elif int(decidir) == 2:
-                pass
+                with open('decisao2y.txt', 'r', encoding='utf-8') as decy2:
+                    Animacao(decy2.read())
 
+            print(f'{usuario},')    
+            with open('final_decisaoY.txt','r', encoding='utf-8') as fim_decisaoY:
+                    Animacao(fim_decisaoY.read(), cor=Fore.GREEN)
 
 def PontinhosSuspense():
     for i in range(25):
@@ -177,7 +181,7 @@ def PontinhosSuspense():
 
 def cenarios():
     opcoes = {
-        1: 'auxilio de profissionais terceirizados',
+        1: 'Terceirização no Cesurg',
         2: 'Para encerrar o programa'
     }
 
