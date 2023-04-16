@@ -1,10 +1,16 @@
 
 
-Analisando o mercado, percebem-se duas oportunidades para a empreitada no CESURG:
+        Analisando o mercado, percebem-se duas oportunidades para a empreitada no CESURG:
 
-A empresa X, ao longo dos anos, construiu cases de sucessos na área de Marketing. Dessa forma, a sua prestação de serviço, inovativa e de alta qualidade técnica, apresentam um custo considerável. Tal alternativa, acabaria limitando o orçamento institucional para as demais atividades.
+        A empresa X, ao longo dos anos, construiu cases de sucessos na área de Marketing. 
+        Dessa forma, a sua prestação de serviço, inovativa e de alta qualidade técnica, apresentam um
+        custo considerável. Tal alternativa, acabaria limitando o orçamento institucional para as 
+        demais atividades.
 
-Por outro lado, a empresa Y é iniciante no mercado. É composta por jovens empresários, com ideias frescas e metodologias menos burocráticas. Destaca-se a flexibilidade para negociação dos processos e custo. Pela realidade dessa empresa, o custo, naturalmente, é menor, porém a incerteza sobre a capacidade técnica dos profissionais fica no ar.
+        Por outro lado, a empresa Y é iniciante no mercado. É composta por jovens empresários, 
+        com ideias frescas e metodologias menos burocráticas. Destaca-se a flexibilidade para 
+        negociação dos processos e custo. Pela realidade dessa empresa, o custo, naturalmente, é 
+        menor, porém a incerteza sobre a capacidade técnica dos profissionais fica no ar.
 
 
 

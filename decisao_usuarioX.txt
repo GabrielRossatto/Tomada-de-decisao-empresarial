@@ -1,5 +1,8 @@
 
 
-Para implantar sua metodologia, a empresa X requisita total liberdade para reavaliar e modificar os diversos processos de comunicação interna e externa da instituição. Levando em conta que isso pode significar mudanças profundas na maneira de trabalho, avalie as delimitações para a empresa X.
+    Para implantar sua metodologia, a empresa X requisita total liberdade para reavaliar 
+    e modificar os diversos processos de comunicação interna e externa da instituição. 
+    Levando em conta que isso pode significar mudanças profundas na maneira de trabalho, 
+    avalie as delimitações para a empresa X.
 
 

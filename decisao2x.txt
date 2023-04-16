@@ -1,10 +1,11 @@
 
 
-Procurando aprimorar e fortalecer os processos já existentes, a empresa X, junto da equipe da instituição, desenvolveu as seguintes atividades:
+    Procurando aprimorar e fortalecer os processos já existentes, a empresa X,
+    junto da equipe da instituição, desenvolveu as seguintes atividades:
 
-- Treinamentos para melhor utilização do hardware e software;
+    - Treinamentos para melhor utilização do hardware e software;
 
-- Criação de um canal de feedback online para alunos e comunidade;
+    - Criação de um canal de feedback online para alunos e comunidade;
 
-- Campanhas de estímulo para que os alunos participem da organização de eventos no campus.
+    - Campanhas de estímulo para que os alunos participem da organização de eventos no campus.
 

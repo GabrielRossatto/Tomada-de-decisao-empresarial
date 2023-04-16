@@ -1,10 +1,11 @@
 
 
-Em um curto espaço de tempo, a empresa X realizou as seguintes implementações: 
+    Em um curto espaço de tempo, a empresa X realizou as seguintes implementações: 
 
-- Aquisição e utilização de softwares sofisticados e específicos da área de edição de imagens;
+    - Aquisição e utilização de softwares sofisticados e específicos da área de edição de 
+    imagens;
 
-- Mudança de funções entre os colaboradores do setor de Marketing e comunicação.
+    - Mudança de funções entre os colaboradores do setor de Marketing e comunicação.
 
-- Realizações de novas campanhas e eventos ao longo do primeiro semestre.
+    - Realizações de novas campanhas e eventos ao longo do primeiro semestre.
 

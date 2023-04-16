@@ -8,9 +8,19 @@ import re
 
 delay = 0.03
 
+
+
+
 init()
+
+def Continuar(): 
+    cont = input("     Pressione qualquer tecla para continuar") 
+
+
 def Animacao(texto, cor=Fore.WHITE):
+
     for letra in texto:
+
         print(cor + Style.BRIGHT + letra + Style.RESET_ALL, end='', flush=True)
         time.sleep(delay)
     print(Fore.RESET)
@@ -22,7 +32,7 @@ def boas_vindas():
     # Imprime as mensagens
     
     global usuario 
-    usuario = input('Por favor, digite o seu nome!\n')
+    usuario = input('      Por favor, digite o seu nome!\n')
     
     return usuario
 
@@ -34,11 +44,11 @@ def Introducao():
 
 def escolher_cenario(opcoes):
     """Lê a opção escolhida pelo usuário e retorna o número do cenário selecionado"""
-    Animacao(f'\n\n{usuario}, qual dos cenários deseja escolher?\n' , cor=Fore.YELLOW)
+    Animacao(f'\n\n     {usuario}, qual dos cenários deseja escolher?\n' , cor=Fore.YELLOW)
     while True:
         
         for chave, valor in opcoes.items():
-            Animacao(f"{chave} - {valor}\n\n", cor=Fore.YELLOW)
+            Animacao(f"     {chave} - {valor}\n\n", cor=Fore.YELLOW)
 
         try:
             cenario = int(input())
@@ -66,7 +76,7 @@ def MenuPrincipal(opcoes):
 
     while True:
         escolha = input(Fore.WHITE + Style.BRIGHT +
-                        "\n\n\nPressione qualquer tecla para continuar. [M] para retornar ao Menu Principal. " + Style.RESET_ALL).upper()
+                        "\n\n\n        Pressione qualquer tecla para continuar. [M] para retornar ao Menu Principal. " + Style.RESET_ALL).upper()
 
         if escolha == 'M':
             os.system('cls')
@@ -110,21 +120,21 @@ def executar_cenario(cenario, opcoes):
 
         with open('escolhe_empresa.txt', 'r', encoding='utf-8') as escolha_empresa:
             Animacao(escolha_empresa.read())
-            emp = input(f'{usuario}, com qual empresa deseja negociar?\n\n(1) X\n\n(2) Y\n')
+            emp = input(f'        {usuario}, com qual empresa deseja negociar?\n\n(1) X\n\n(2) Y\n')
 
         emp = obter_opcoes(emp)
 
         if int(emp) == 1:
-            with open('decisao_usuariox.txt', 'r', encoding='utf-8') as dec:
+            with open('decisao_usuarioX.txt', 'r', encoding='utf-8') as dec:
                 Animacao(dec.read())
-                print(f'{usuario}, pronto para decidir? ^^\n\n')
+                print(f'        {usuario}, pronto para decidir? ^^\n\n')
 
 
             for chave, valor in opcoesX.items():
                 print(Fore.YELLOW + Style.BRIGHT +
                       f" {chave} - {valor}\n\n" + Style.RESET_ALL)
 
-            decidir = input('Escolha a opção 1 ou 2:')
+            decidir = input('Escolha a opção 1 ou 2:\n')
 
             decidido = obter_opcoes(decidir)
 
@@ -132,17 +142,20 @@ def executar_cenario(cenario, opcoes):
                 with open('decisao1x.txt', 'r', encoding='utf-8') as dec1:
                     Animacao(dec1.read())
 
+                Continuar()
                 PontinhosSuspense()
 
                 with open('fim_decisao1x.txt', 'r', encoding='utf-8') as fim_decisaoX:
-                    print(f'\n\n{usuario},')
+                    print(f'\n\n        {usuario},')
                     Animacao(fim_decisaoX.read(), Fore.RED)
-                    print('\U0001F613', '\U0001F613')
+
 
             elif int(decidido) == 2:
                 with open('decisao2x.txt', 'r', encoding='utf-8') as dec2:
                     Animacao(dec2.read())
 
+                Continuar()
+                
                 with open('fim_decisao2x.txt', 'r', encoding='utf-8') as fim_decisao2x:
                     print(f'{usuario},')
                     Animacao(fim_decisao2x, cor=Fore.GREEN)
@@ -157,7 +170,7 @@ def executar_cenario(cenario, opcoes):
                       f'{k} - {v}\n\n' + Style.RESET_ALL)
 
             decidir = input(
-                f'{usuario}, decida a opção mais adequada, considerando tanto o contexto da instituição como o da empresa contratada.')
+                f'      {usuario}, decida a opção mais adequada, considerando tanto o contexto da instituição como o da empresa\ncontratada.')
 
             decidido = obter_opcoes(decidir)
 
@@ -165,10 +178,16 @@ def executar_cenario(cenario, opcoes):
                 with open('decisao1y.txt', 'r', encoding='utf-8') as decy1:
                     Animacao(decy1.read())
 
+                  
+
             elif int(decidir) == 2:
                 with open('decisao2y.txt', 'r', encoding='utf-8') as decy2:
                     Animacao(decy2.read())
+                Continuar()
+                with open('continuacao2y.txt', 'r', encoding='utf-8') as contin:
+                    Animacao(contin.read())
 
+            Continuar()
             print(f'{usuario},')    
             with open('final_decisaoY.txt','r', encoding='utf-8') as fim_decisaoY:
                     Animacao(fim_decisaoY.read(), cor=Fore.GREEN)
@@ -212,12 +231,13 @@ if __name__ == '__main__':
     horas = now.strftime('%H:%M:%S')
     
     # Formata as mensagens
-    Animacao(f"\n\n {'*' * 45}", cor=Fore.BLUE)
-    Animacao('                  BEM VINDO !!', cor=Fore.GREEN) 
-    Animacao(f"{'*' * 45}", cor=Fore.YELLOW)
+    print('\n\n')
+    Animacao(f"         {'*' * 45}", cor=Fore.BLUE)
+    Animacao(f'                         BEM VINDO !!', cor=Fore.GREEN) 
+    Animacao(f"         {'*' * 45}", cor=Fore.YELLOW)
     with open ('boas_vindas.txt', 'r', encoding='utf-8') as bvv:
         Animacao(bvv.read())
-    print(f'\nHoje é {data} e agora são {horas}'.center(80))
+    print(f'\n      Hoje é {data} e agora são {horas}'.center(80))
     boas_vindas()
     cenarios()
     final() 

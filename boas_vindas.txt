@@ -1,4 +1,6 @@
 
 
-Bem-vindo à simulação empresarial do CESURG. Testaremos a sua capacidade de tomada de decisão em diferentes cenários de gestão. Esta simulação é um projeto idealizado pelos alunos do sétimo semestre de Administração na discplina de Simulação Empresarial. Programação realizada por Gabriel Rossatto
+        Bem-vindo à simulação empresarial do CESURG. Testaremos a sua capacidade de tomada de decisão 
+        em diferentes cenários de gestão. Esta simulação é um projeto idealizado pelos 
+        alunos do sétimo semestre de Administração na discplina de Simulação Empresarial. 
 
